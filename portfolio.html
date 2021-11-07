@@ -16,22 +16,32 @@
 
   <body>
     <!-- Header content -->
-    <header>
+    <header class="header">
       <!-- Main nav -->
-      <nav>
-        <a href="./index.html"><span>WebStudio</span></a>
+      <nav class="header-nav">
+        <a class="link logo logo-black" href="./index.html"><span>Web</span>Studio</a>
 
-        <ul>
-          <li><a href="./index.html">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+        <ul class="list header-list">
+          <li class="header-item">
+            <a class="link header-link" href="./index.html">Студия</a>
+          </li>
+          <li class="header-item">
+            <a class="link header-link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="header-item">
+            <a class="link header-link" href="" class="link">Контакты</a>
+          </li>
         </ul>
       </nav>
 
       <!-- Contacts -->
-      <ul>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      <ul class="list header-contacts">
+        <li class="header-item">
+          <a class="link header-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="header-item">
+          <a class="link header-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
       </ul>
     </header>
 
@@ -39,7 +49,7 @@
     <main>
       <section>
         <!-- Filter content -->
-        <ul>
+        <ul class="list">
           <li><button type="button">Все</button></li>
           <li><button type="button">Веб-сайты</button></li>
           <li><button type="button">Приложения</button></li>
@@ -48,7 +58,7 @@
         </ul>
 
         <!-- Main content -->
-        <ul>
+        <ul class="list">
           <li>
             <img src="" alt="Ноутбук" />
             <h3></h3>
@@ -99,13 +109,26 @@
     </main>
 
     <!-- Footer content -->
-    <footer>
-      <a href="./index.html"><span>WebStudio</span></a>
+    <footer class="footer">
+      <a class="link logo logo-white" href="./index.html" class="logo"><span>Web</span>Studio</a>
       <address>
-        <ul>
-          <li><a href="">г. Киев, пр-т Леси Украинки, 26</a></li>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+        <ul class="list address-list">
+          <li class="address-item">
+            <a
+              class="link address-link"
+              href="https://goo.gl/maps/nczX3HqXWw6fcAAx9"
+              target="_blank"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+          </li>
+          <li class="address-item">
+            <a class="link address-link mailtel-link" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </li>
+          <li class="address-item">
+            <a class="link address-link mailtel-link" href="tel:+380991111111">+38 099 111 11 11</a>
+          </li>
         </ul>
       </address>
     </footer>
