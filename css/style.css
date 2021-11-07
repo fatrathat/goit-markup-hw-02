@@ -1,3 +1,4 @@
+/* Common variables*/
 :root {
   --background-color: #2f303a;
   --logo-header-color: #000000;
@@ -7,21 +8,24 @@
   --second-text-color: #757575;
   --addres-text-color: rgba(255, 255, 255, 0.6);
   --footer-logo-color: #ffffff;
+  --button-main-color: #f5f4fa;
 }
 
+/* General style */
 body {
   font-family: Roboto, sans-serif;
   color: var(--first-text-color);
 }
 
 .list {
-  list-style: none;
+  list-style: none; /* */
 }
 
 .link {
   text-decoration: none;
 }
 
+/* Header content */
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -30,7 +34,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo span {
+.logo .logo-span {
   color: var(--accent-text-color);
 }
 .logo-black {
@@ -85,7 +89,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  text-align: center;
   letter-spacing: 0.06em;
   border: 0;
   color: var(--main-title-color);
@@ -102,7 +105,6 @@ body {
 }
 
 .features-text {
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -124,7 +126,6 @@ body {
 }
 
 .team-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -137,7 +138,6 @@ body {
 
 .address-link {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -146,4 +146,33 @@ body {
 
 .mailtel-link {
   color: var(--addres-text-color);
+}
+
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  border: 0;
+  background: var(--button-main-color);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background: var(--accent-text-color);
+  color: var(--main-title-color);
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
 }
