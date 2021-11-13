@@ -1,4 +1,4 @@
-/* Common variables*/
+/*-------------Common variables-------------*/
 :root {
   --background-color: #2f303a;
   --logo-header-color: #000000;
@@ -11,21 +11,67 @@
   --button-main-color: #f5f4fa;
 }
 
-/* General style */
+/*-------------Reset styles-------------*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/*-------------General style-------------*/
 body {
   font-family: Roboto, sans-serif;
   color: var(--first-text-color);
 }
 
 .list {
-  list-style: none; /* */
+  list-style: none;
 }
 
 .link {
   text-decoration: none;
 }
 
-/* Header content */
+/*-------------Header content-------------*/
+.header {
+  padding: 25px 0 25px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -39,10 +85,19 @@ body {
 }
 .logo-black {
   color: var(--first-text-color);
+  margin-right: 93px;
 }
 
 .logo-white {
   color: var(--main-title-color);
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item:not(last-child) {
+  margin-right: 50px;
 }
 
 .header-link {
@@ -64,6 +119,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: auto;
 }
 
 .header-contacts:hover,
@@ -71,8 +129,11 @@ body {
   color: var(--accent-text-color);
 }
 
+/*----------------Main content----------------*/
+/*-------------Title content-------------*/
 .hero {
   background-color: var(--background-color);
+  padding: 200px 0 200px 0;
 }
 
 .hero-title {
@@ -81,8 +142,9 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
+  margin-bottom: 30px;
   color: var(--main-title-color);
+  text-align: center;
 }
 
 .hero-button {
@@ -93,9 +155,15 @@ body {
   border: 0;
   color: var(--main-title-color);
   background: var(--accent-text-color);
-  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
 }
 
+/*-------------Features content-------------*/
 .features-title {
   font-weight: 700;
   font-size: 14px;
